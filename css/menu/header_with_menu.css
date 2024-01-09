@@ -1,0 +1,45 @@
+.base-header {
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+.home-header-desktop {
+    height: 76px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: #fff;
+}
+
+.home-header-desktop img {
+    height: 76px;
+    padding: 10px;
+}
+
+.login-area-button {
+    padding: 12px 23px;
+    gap: 10px;
+    cursor: pointer;
+    background-color: #008181;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+}
+.home-header-desktop nav {
+    margin-top: 10px;
+}
+.home-header-desktop nav a {
+    color: #1B2C37;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 20px;
+    text-decoration: none;
+}
+.home-header-desktop a:hover {
+    color: #008181;
+}
