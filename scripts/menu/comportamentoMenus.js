@@ -1,56 +1,44 @@
-
 const mobileAside = document.getElementById('mobile-aside-menu');
+const mobileAsideClosed = document.getElementById('mobile-aside-menu-closed');
 const desktopHeader = document.getElementById('header-desktop');
+const iconeMenuLateral = document.getElementById('icone-menu-closed');
+const iconeMenuLateralAberto = document.getElementById('icone-menu-open');
 const mobileWidthThreshold = 768;
 
 function isMobile() {
-    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    // Retorna true se a largura da tela for menor que o limite, indicando um dispositivo móvel
-    return screenWidth < mobileWidthThreshold;
-
+    return window.innerWidth < mobileWidthThreshold;
 }
 
-function intercalaMenuConformeDispositivo() {
-    console.log('Intercalador: passou aqui')
-    isMobile() ? exibeMenuMobile() : exibeMenuDesktop();
-}
+function toggleMenuDisplay(isMobile) {
+    desktopHeader.classList.toggle('base-header', !isMobile);
+    desktopHeader.classList.toggle('oculta-display', isMobile);
 
-function exibeMenuDesktop() {
-    desktopHeader.classList.remove('oculta-display');
-    desktopHeader.classList.add('base-header');
-}
-function ocultaMenuDesktop() {
-    desktopHeader.classList.add('oculta-display');
-}
-
-function exibeMenuMobile() {
-    mobileAside.classList.remove('oculta-display');
-    mobileAside.classList.add('mobile-aside-menu');
-}
-
-function ocultaMenuMobile() {
-    mobileAside.classList.add('oculta-display');
+    mobileAside.classList.toggle('mobile-aside-menu', isMobile);
+    mobileAside.classList.toggle('oculta-display', !isMobile);
 }
 
 function handleResize() {
-    // Obtemos as dimensões atualizadas da janela
-    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    
-    if(width <= mobileWidthThreshold) {
-        ocultaMenuDesktop();
-        exibeMenuMobile();
-    }else if(width > mobileWidthThreshold) {
-        ocultaMenuMobile();
-        exibeMenuDesktop();
-    }
+    const isMobileDevice = isMobile();
+    toggleMenuDisplay(isMobileDevice);
 }
 
+function toggleMenuLateral() {
 
-// Adiciona um ouvinte de evento para o evento de redimensionamento
+    if(mobileAside.classList.contains('remove-display')) {
+        mobileAside.classList.remove('remove-display');
+        mobileAsideClosed.classList.add('remove-display');
+    } else if(mobileAsideClosed.classList.contains('remove-display')) {
+        mobileAsideClosed.classList.remove('remove-display');
+        mobileAside.classList.add('remove-display');
+    }
+
+   
+}
+
 window.addEventListener('resize', handleResize);
+iconeMenuLateral.addEventListener('click', toggleMenuLateral);
+iconeMenuLateralAberto.addEventListener('click', toggleMenuLateral);
 
 window.onload = function() {
-    intercalaMenuConformeDispositivo();
     handleResize();
 };
-
