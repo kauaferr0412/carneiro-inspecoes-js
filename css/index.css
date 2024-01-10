@@ -1,10 +1,11 @@
 @import url('./menu/aside_menu.css');
 @import url('./menu/header_with_menu.css');
-
+@import url('./rodape/footer.css');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 .oculta-display {
