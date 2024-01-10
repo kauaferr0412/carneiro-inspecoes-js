@@ -43,3 +43,10 @@
 .home-header-desktop a:hover {
     color: #008181;
 }
+
+@media(max-width: 820px) {
+    .home-header-desktop nav a {
+        font-size: 14px;
+        margin: 10px;
+    }
+}

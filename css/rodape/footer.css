@@ -15,7 +15,7 @@
     height: 40px;
 }
 .rodape-padrao {
-    font-size: 16px;
+    font-size: 14px;
 }
 .icons {
     width: 140px;
@@ -36,4 +36,13 @@
 .icons span a img:hover {
     width: 28px;
     height: 28px;
+}
+
+@media (max-width: 640px) {
+    .rodape-padrao {
+        justify-content: space-between;
+    }
+    .rodape-padrao p{
+        display: none;
+    }
 }
