@@ -1,0 +1,12 @@
+.consultas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto;
+    padding: 100px;
+}
+.consultas section {
+    font-family: Inter,sans-serif;
+    width: 60%;
+    font-size: 18px;
+}
