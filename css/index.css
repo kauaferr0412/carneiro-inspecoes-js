@@ -14,36 +14,53 @@
     display: none;
 }
 
-.main-section {
+.banner-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     height: 80vh;
-    position: static;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
+
+    @media (max-width: 900px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.container-capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(81deg, #1C2D38 43.16%, rgba(27, 44, 55, 0.49) 100%),
         url('../resources/capa.svg');
     background-size: cover;
     background-position: center;
-
-}
-
-.main-section section {
-    width: 600px;
-    height: 100%;
-    margin-right: 500px;
-    background-color: transparent;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
 
-.main-section section p {
+.banner-tittle {
+    color: var(--ffffff, #FFF);
+    font-family: Inter, sans-serif;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.023%;
+}
+
+.banner-subtittle {
     color: var(--ffffff, #FFF);
     font-family: Inter, sans-serif;
     font-size: 18px;
@@ -56,37 +73,20 @@
     flex-direction: column;
 }
 
-.main-section section h1 {
-    color: var(--ffffff, #FFF);
-    font-family: Inter, sans-serif;
-    font-size: 51px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110.023%;
-}
-
-.main-section div {
-    color: var(--ffffff, #FFF);
-    font-family: 'Inter', sans-serif;
-    border: 0px;
-    font-size: 14.897px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background: var(--008181, #008181);
+.content-wrapper {
+    width: 600px;
+    height: 100%;
+    margin-right: 500px;
+    background-color: transparent;
     display: flex;
-    padding: 15px 21px;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    cursor: pointer;
-    width: 240px;
-}
+    flex-direction: column;
 
-.main-section div a {
-    text-decoration: none;
-    color: #FFF;
+    @media (max-width: 900px) {
+      margin-right: 0px;
+      padding: 20px;
+    }
 }
 
 .section-container {
@@ -456,7 +456,6 @@
     color: var(--ffffff, #FFF);
     font-family: Inter, sans-serif;
     font-size: 16px;    
-    /* Alterado o tamanho da fonte */
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
