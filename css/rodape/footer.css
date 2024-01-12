@@ -5,20 +5,22 @@
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     font-family: 'Inter', sans-serif;
 }
 .rodape-padrao img{
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    float: left;
+    margin-bottom: 10px;
 }
 .rodape-padrao {
     font-size: 14px;
 }
 .icons {
     width: 140px;
+    margin-top: 10px;
 }
 .icons a {
     text-decoration: none;

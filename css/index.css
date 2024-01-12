@@ -4,6 +4,7 @@
 @import url('./rodape/footer.css');
 
 * {
+    font-size: 12px;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -160,16 +161,27 @@
     width: 100%;
     max-width: 950px;
     margin: 0 auto;
-    padding-top: 250px;
     padding-bottom: 100px;
     border: 0px;
     overflow: hidden;
     background-color: #fff;
 }
 
+.card-container-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    border: 0px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
 .img-card-text {
     height: auto;
-    width: 40%;
     margin-bottom: 16px;
 }
 
