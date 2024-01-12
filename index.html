@@ -31,12 +31,23 @@
         <div class="home-header-desktop">
             <span>
                 <a href="./index.html">
-                    <img src="./resources/logo.png" alt="Logo Carneiro Inspeções">
+                    <img src="./resources/logo.png" style="width: 130px; height: 60px;" alt="Logo Carneiro Inspeções">
                 </a>
             </span>
             <nav>
                 <a href="./index.html">Home</a>
-                <a href="./solucoes.html">Soluções</a>
+                <div class="menu-solucoes">
+                    <a href="./solucoes.html">Soluções</a>
+                    <div class="submenu">
+                        <a href="./solucoes/nossasSolucoes.html">Nossas Soluções</a>
+                        <hr class="hr-divisor" />
+                        <a href="#">Inspeções</a>
+                        <hr class="hr-divisor" />
+                        <a href="#">Qualificações</a>
+                        <hr class="hr-divisor" />
+                        <a href="#">Gerenciamento</a>
+                    </div>
+                </div>
                 <a href="./consultas.html">Consultas</a>
                 <a href="#contato">Contatos</a>
             </nav>
@@ -73,13 +84,13 @@
     <div class="banner-container">
         <div class="container-capa">
             <div class="content-wrapper">
-                    <label class="banner-tittle">Inspeções de soldagem confiáveis e precisas</label>
-                    <br />
-                    <label class="banner-subtittle">Garanta a qualidade e segurança das suas soldas com nossos serviços
-                        especializados em inspeção de soldagem. Solicite já sua inspeção!
-                    </label>
-                    <br />
-                    <button style="width: 50%; " class="button" onclick="window.location.href='/inspecoes'">Saiba mais <img
+                <label class="banner-tittle">Inspeções de soldagem confiáveis e precisas</label>
+                <br />
+                <label class="banner-subtittle">Garanta a qualidade e segurança das suas soldas com nossos serviços
+                    especializados em inspeção de soldagem. Solicite já sua inspeção!
+                </label>
+                <br />
+                <button style="width: 50%; " class="button" onclick="window.location.href='/inspecoes'">Saiba mais <img
                         src='./resources/arrow-white 1.svg' alt="Component" /></button>
             </div>
         </div>
@@ -128,8 +139,8 @@
 
     </div>
 
-    <div class="card-container-info">
-        <img class="img-card-text" src="./resources/image_text.svg" />
+    <div style="padding-top: 250px;" class="card-container-info">
+        <img style="width: 40%;" class="img-card-text" src="./resources/image_text.svg" />
         <div class="text-container">
             <h2 class="text-tittle">
                 NOSSA EMPRESA
@@ -153,6 +164,7 @@
                 <div class="tittle-card-info">
                     AS SOLUÇÕES
                 </div>
+                <br />
                 <div class="subtittle-card-info">
                     Que disponibilizamos
                 </div>
