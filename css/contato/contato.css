@@ -1,0 +1,201 @@
+.secao-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 50;
+    padding: 40px;
+    margin: 0px 20px;
+    max-width: 100%;
+}
+.texto-secao-contato {
+    width: 65%;
+}
+.texto-secao-contato span {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.texto-secao-contato span a{
+    color: var(--008181, #008181);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 10px;
+    line-height: 22.727px;
+    letter-spacing: 1px;
+}
+.texto-secao-contato h1{
+    color: var(--008181, #008181);
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 3.84px;
+}
+
+.texto-secao-contato h2 {
+    color: var(--ffffff);
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+}
+
+.texto-secao-contato p {
+    color: var(--1-b-2-c-37, #1B2C37);
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    line-height: 170%;
+}
+.not-span {
+    color: var(--008181, #008181);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.727px;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+.politica-privacidade {
+    color: var(--1-b-2-c-37, #1B2C37);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    width: 320px;
+    text-align: center;
+    margin-right: 30px;
+    line-height: normal;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+}
+#inputNome, #inputAssunto {
+    width: 365px;
+    border: 0.7px solid rgb(34, 34, 34);
+    height: 45px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    color: var(--1-b-2-c-37, #1B2C37);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 15px;
+}
+#inputNome::placeholder {
+    color: var(--1-b-2-c-37, #1B2C37);
+}
+#inputAssunto::placeholder {
+    color: var(--1-b-2-c-37, #1B2C37);
+}
+#inputTel {
+    border: 0.7px solid rgb(34, 34, 34);
+    height: 45px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    color: var(--1-b-2-c-37, #1B2C37);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 15px;
+}
+#inputTel::placeholder {
+    color: var(--1-b-2-c-37, #1B2C37);
+}
+#inputEmail {
+    border: 0.7px solid rgb(34, 34, 34);
+    height: 45px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    color: var(--1-b-2-c-37, #1B2C37);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+#inputEmail::placeholder {
+    color: var(--1-b-2-c-37, #1B2C37);
+}
+#inputMensagem {
+    width: 365px;
+    border: 0.7px solid rgb(27, 44, 55);
+    height: 85px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    color: var(--1-b-2-c-37, #1B2C37);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 15px;
+    padding-top: 15px;
+    resize: vertical;
+}
+#inputMensagem::placeholder {
+    color: var(--1-b-2-c-37, #1B2C37);
+}
+.button-envia-mensagem {
+    color: var(--ffffff, #FFF);
+    font-family: 'Inter', sans-serif;
+    border: 0px;
+    font-size: 14.897px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(--008181, #008181);
+    display: flex;
+    padding: 15px 21px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 365px;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+@media(max-width: 768px) {
+    .secao-contato {
+        flex-direction: column;
+        max-width: 95%;
+        align-items: center;
+        padding: 0px;
+        justify-content: center;
+    }
+    .texto-secao-contato {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .texto-secao-contato p {
+        text-align: start;
+        margin: 0px;
+        padding: 0px;
+    }
+    .contact-form {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    .button-envia-mensagem {
+        margin-right: 0px;
+    }
+}

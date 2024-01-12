@@ -2,6 +2,7 @@
 @import url('./menu/header_with_menu.css');
 @import url('./consultas/consultas.css');
 @import url('./rodape/footer.css');
+@import url('./contato/contato.css');
 
 * {
     font-size: 12px;
