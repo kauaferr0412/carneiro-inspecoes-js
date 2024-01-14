@@ -7,7 +7,7 @@ function submeterFormulario() {
 
     const url = "https://carneiro-inspecoes-api-43532fa58154.herokuapp.com/api/contato/enviar";
     const configuracao = {
-        method: 'POST', // Método HTTP
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -17,7 +17,7 @@ function submeterFormulario() {
             'mensagem': inputMensagem.value,
             'nome': inputNome.value,
             'telefone': inputTel.value
-        }) // Converte o objeto em uma string JSON
+        }) 
     };
     
     if(validaCampos(inputNome.value, inputEmail.value, inputTel.value, inputAssunto.value, inputMensagem.value)) {

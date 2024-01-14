@@ -2,7 +2,7 @@
     width: 250px;
     max-height: 100%;
     background-color: #333;
-    position: absolute;
+    position: fixed;
     font-family: 'Inter', sans-serif;
     z-index: 1;
     overflow-y: auto;

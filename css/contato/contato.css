@@ -80,7 +80,17 @@
     align-items: center;
     justify-content: flex-start;
     width: 400px;
+
+    margin-right: -50px;
 }
+
+.div-contact-side-by-side {
+    display: flex;
+    width: 100%;
+
+    justify-content: flex-start;
+}
+
 #inputNome, #inputAssunto {
     width: 365px;
     border: 0.7px solid rgb(34, 34, 34);
@@ -130,6 +140,11 @@
     line-height: normal;
     margin-left: 10px;
     padding-left: 15px;
+
+
+    @media (max-width: 900px) {
+        width: 162px;
+    }
 }
 #inputEmail::placeholder {
     color: var(--1-b-2-c-37, #1B2C37);
@@ -192,7 +207,7 @@
         padding: 0px;
     }
     .contact-form {
-        max-width: 90%;
+
         margin-top: 20px;
     }
     .button-envia-mensagem {

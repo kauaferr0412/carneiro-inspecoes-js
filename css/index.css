@@ -4,6 +4,122 @@
 @import url('./rodape/footer.css');
 @import url('./contato/contato.css');
 
+
+.tabs {
+    display: flex;
+    padding: 100px;
+}
+
+.tab-btn {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    flex: 1;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    align-items: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #fff;
+    background: var(--ffffff,#fff);
+    background-color: initial;
+    border: 0.7px solid #c5c5c5;
+    border-radius: 4px;
+    box-shadow: 8px 4px 19px 0 #0081811f;
+    box-sizing: border-box;
+    color: #c5c5c5;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    font-size: .875rem;
+    font-style: normal;
+    font-weight: 700;
+    font-weight: 500;
+    height: 100px;
+    justify-content: center;
+    letter-spacing: .02857em;
+    line-height: normal;
+    line-height: 1.25;
+    margin: 10px;
+    max-width: 200px;
+    min-height: 130px;
+    min-width: 90px;
+    outline: 0;
+    overflow: hidden;
+    padding: 12px 16px;
+    position: relative;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: normal;
+    width: 176px;
+}
+
+.tab-btn.active {
+    color: #008181;
+    color: var(--008181,#008181);
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-color: #008181;
+    transform: scale(1.1);
+}
+
+.tab-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    @media (max-width: 900px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.text-tabview {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+.tab-content {
+    display: none;
+    border: 0px;
+    width: 100%;
+    @media (max-width: 900px) {
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+}
+
+.img-card-text.tabview-img {
+    width: 35%;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+
 * {
     font-size: 12px;
     margin: 0px;
@@ -230,6 +346,16 @@
     line-height: 145%;
 }
 
+.text p {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+
 .container-tittle-card-info {
     width: 50%;
 }
@@ -410,6 +536,17 @@
 
     @media (max-width : 900px) {
         width: 100%;
+    }
+}
+
+.desktop-cards {
+    @media (max-width : 900px) {
+        display: none;
+    }
+}
+.mobile-cards {
+    @media (min-width : 901px) {
+        display: none;
     }
 }
 
