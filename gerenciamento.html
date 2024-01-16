@@ -41,17 +41,17 @@
                 <div class="menu-solucoes">
                     <a href="./solucoes.html">Soluções</a>
                     <div class="submenu">
-                        <a href="./solucoes.html">Nossas Soluções</a>
+                        <a href="./nossasSolucoes.html">Nossas Soluções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Inspeções</a>
+                        <a href="./inspecoes.html">Inspeções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Qualificações</a>
+                        <a href="./qualificacoes.html">Qualificações</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Gerenciamento</a>
+                        <a href="./gerenciamento.html">Gerenciamento</a>
                     </div>
                 </div>
                 <a href="./consultas.html">Consultas</a>
-                <a href="#contato">Contatos</a>
+                <a href="./index.html#contato">Contatos</a>
             </nav>
             <button class="login-area-button">
                 Área de login
@@ -71,13 +71,13 @@
         </span>
         <img src="../resources/logo_white.png" alt="Logo Carneiro Inspeções com texto branco">
         <nav>
-            <a href="">Home</a>
-            <a href="">Nossas Soluções</a>
-            <a href="">Inspeções</a>
-            <a href="">Qualificações</a>
-            <a href="">Gerenciamento</a>
-            <a href="">Consultas</a>
-            <a href="">Contatos</a>
+            <a href="./index.html">Home</a>
+            <a href="./nossasSolucoes.html">Nossas Soluções</a>
+            <a href="./inspecoes.html">Inspeções</a>
+            <a href="./qualificacoes.html">Qualificações</a>
+            <a href="./gerenciamento.html">Gerenciamento</a>
+            <a href="./consultas.html">Consultas</a>
+            <a href="./index.html#contato">Contatos</a>
         </nav>
         <button class="login-area-button">
             Área de login
@@ -271,9 +271,11 @@
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
         <div class="tabs">
-            <button class="tab-btn" onclick="openTab(event, 'tab1')">LÍQUIDO PENETRANTE</button>
-            <button class="tab-btn" onclick="openTab(event, 'tab2')">Tab 2</button>
-            <button class="tab-btn" onclick="openTab(event, 'tab3')">Tab 3</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab1')">WELD LIST</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab2')">DATABOOK</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab3')">GESTÃO DE NÃO CONFORMIDADES</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab4')">FORNECIMENTO DE TÉCNICO EM DOCUMENTAÇÃO</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab5')">FORNECIMENTO DE SOLDADORES</button>
         </div>
 
     </div>
@@ -284,40 +286,136 @@
             <div class="card-container-info">
                 <div class="text-container">
                     <h2 class="text-subtittle">
-                        Inspeção por líquido penetrante
+                        Weld List
                     </h2>
                     <br />
                     <div>
                         <img src="../resources/aspas.svg" />
                         <br />
-                        <p class="text-tabview">O ensaio por Líquido Penetrante (LP) é um método de ensaio não
-                            destrutivo utilizado para detectar
-                            descontinuidades superficiais em materiais metálicos e não metálicos. Consiste em aplicar um
-                            líquido penetrante na superfície da peça a ser inspecionada e, após um tempo de penetração,
-                            remover o excesso de líquido e aplicar um revelador para evidenciar as descontinuidades.</p>
-                        <br />
-                        <p class="text-tabview">O ensaio por LP é aplicado em diversas áreas da indústria, como na
-                            inspeção de soldas, peças
-                            aeronáuticas, componentes de turbinas, estruturas metálicas, entre outros. É um método
-                            eficiente
-                            e econômico para detectar descontinuidades superficiais em materiais, contribuindo para a
-                            garantia da qualidade e segurança dos produtos e processos industriais.</p>
-                        </p>
+                        <p class="text-tabview">O Weld list é uma ferramenta utilizada para o controle de soldas e ensaios em projetos mecânicos. 
+                            É um documento que lista todas as juntas soldadas em de um determinado equipamento, incluindo informações detalhadas sobre o processo de soldagem utilizado, 
+                            tipo de metal base, espessura do material, tipo de junta, soldador responsável, data de realização da solda e resultados dos ensaios não destrutivos. 
+                            Através do uso do weld list, é possível garantir que todas as juntas soldadas em um projeto estejam devidamente documentadas e controladas, 
+                            o que é essencial para a segurança e a qualidade final. Além disso, essa ferramenta possibilita a geração de programação de ensaios, relatórios inspeções e mapas 
+                            de rastreabilidade.</p>
                     </div>
                     <br />
                 </div>
-                <img class="img-card-text tabview-img" src="../resources/liquido_penetrante.svg" />
+                <img class="img-card-text tabview-img" src="./resources/wild_list.svg" alt="Imagem de pessoas se reunindo."/>
             </div>
         </div>
 
         <div id="tab2" class="tab-content">
-            <h2>Conteúdo da Tab 2</h2>
-            <p>Este é o conteúdo da Tab 2.</p>
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Databook
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A organização da documentação técnica final (databook) é vital para garantir a acessibilidade e compreensão eficaz. 
+                            Inicia-se com um índice detalhado, oferecendo uma visão geral e facilitando a localização de documentos específicos. 
+                            Os documentos principais, como manuais e desenhos técnicos, seguem uma lógica sequencial ou temática.</p>
+                        <br />
+                        <p class="text-tabview">A divisão por categorias agrupa documentos relacionados a design, testes ou manutenção, 
+                            simplificando a navegação. Instruções operacionais e diretrizes práticas são apresentadas de forma sequencial ou por processos. 
+                            Certificações e padrões são destacados para garantir a conformidade regulatória.</p>
+                        <br />
+                        <p class="text-tabview">A seção de histórico de revisões permite rastrear modificações ao longo do tempo. Em formatos eletrônico e impresso, 
+                            a documentação é organizada para facilitar a compreensão, com links interativos ou paginação adequada. 
+                            Seções específicas para diferentes grupos de usuários personalizam a utilidade da documentação técnica. 
+                            Essa abordagem assegura que a documentação seja uma ferramenta eficaz para compreensão abrangente do projeto, produto ou processo ao longo do tempo.</p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/data-book.jpg" alt="Imagem de três DataBooks"/>
+            </div>
         </div>
 
         <div id="tab3" class="tab-content">
-            <h2>Conteúdo da Tab 3</h2>
-            <p>Este é o conteúdo da Tab 3.</p>
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Gestão de não conformidades
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A gestão eficaz de não conformidades é crucial para o sucesso organizacional, 
+                            proporcionando benefícios significativos. Ao corrigir não conformidades, cria-se um ciclo de aprendizado que impulsiona avanços em produtos e processos, 
+                            aprimorando a eficiência operacional e fortalecendo a garantia da qualidade.</p>
+                        <br />
+                        <p class="text-tabview">Essa abordagem proativa permite a prevenção de recorrências, analisando raízes de problemas e implementando medidas 
+                            preventivas para estabilidade dos processos. 
+                            Além disso, ao demonstrar compromisso com a qualidade, a organização melhora a satisfação do cliente, fortalecendo a reputação no mercado.</p>
+                        <br />
+                        <p class="text-tabview">A gestão de não conformidades também impulsiona uma cultura organizacional voltada para a melhoria contínua, 
+                            incentivando a participação ativa dos colaboradores na resolução de problemas. Esse enfoque não só fortalece a coesão interna, 
+                            mas também contribui para a redução de custos a longo prazo, evitando despesas adicionais relacionadas a retrabalhos e perda de clientes. 
+                            Em suma, uma gestão sólida de não conformidades é um pilar 
+                            fundamental para a excelência operacional e o sucesso sustentável da organização.</p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/get-n-conformidades.jpg" alt="Imagem de representação visual dos fundamentos da Gestão de não conformidades."/>
+            </div>
+        </div>
+
+        <div id="tab4" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Fornecimento de técnico em documentação
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">O técnico em documentação desempenha um papel central na organização e gestão de informações. Inicialmente, coleta dados de diversas fontes, 
+                            como relatórios e documentos técnicos, para, em seguida, 
+                            classificar e catalogar essas informações, facilitando futuras buscas.</p>
+                        <br />
+                        <p class="text-tabview">Responsável pela digitalização e arquivamento eletrônico, converte documentos físicos em formatos digitais para garantir acessibilidade a longo prazo. 
+                            A manutenção de registros atualizados e o gerenciamento de versões são cruciais para assegurar a disponibilidade de informações recentes.</p>
+                        <br />
+                        <p class="text-tabview">Além de padronizar documentos, distribui-os adequadamente e oferece orientação sobre políticas de documentação. 
+                            Avalia necessidades organizacionais, realiza auditorias para conformidade e colabora interdepartamentalmente para atender às demandas específicas de cada setor. 
+                            Em resumo, o técnico em documentação é essencial para a eficiência operacional e integridade das informações, garantindo conformidade e acessibilidade.</p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/escr-hm.jpg" alt="Imagem de um técnico em documentação, realizando as suas atividades."/>
+            </div>
+        </div>
+
+        <div id="tab5" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Fornecimento de soldadores
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A terceirização de mão de obra de soldadores oferece benefícios estratégicos notáveis na indústria de soldagem. Ao adotar essa abordagem, 
+                            as empresas garantem acesso imediato a especialistas técnicos, mantendo-se atualizadas com as práticas mais recentes do setor.</p>
+                        <br />
+                        <p class="text-tabview">Essa flexibilidade de recursos permite ajustar a capacidade de produção conforme as demandas do projeto, 
+                            reduzindo custos fixos associados a salários e benefícios. Além disso, ao evitar contratações diretas, as empresas podem pagar pelos serviços de soldagem conforme 
+                            a necessidade,  especialmente vantajoso em períodos de flutuações na produção.</p>
+                        <br />
+                        <p class="text-tabview">A expertise mantida por nossa equipe de soldadores resulta em trabalhos de soldagem mais precisos, 
+                            contribuindo para a qualidade geral dos produtos finais. Em resumo, a terceirização de mão de obra de soldadores emerge como uma estratégia valiosa, 
+                            proporcionando vantagens como flexibilidade, redução de custos e melhoria da qualidade na execução de trabalhos de soldagem.</p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/soldadores-obj.jpg" alt="Soldadores, realizando um procedimento de soldagem, em uma peça metálica de médio porte."/>
+            </div>
         </div>
     </div>
 
@@ -357,7 +455,7 @@
             </span>
             <span>
                 <a href="https://www.instagram.com/carneiroinspecoes/" target="_blank" rel="noopener noreferrer">
-                    <img src="../resources/twitter_icon.svg" alt="Logo do Instagram">
+                    <img src="../resources/instagram_icon.svg" alt="Logo do Instagram">
                 </a>
             </span>
             <span>

@@ -26,7 +26,6 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://unpkg.com/inputmask"></script>
-
 </head>
 
 <body>
@@ -40,19 +39,19 @@
             <nav>
                 <a href="./index.html">Home</a>
                 <div class="menu-solucoes">
-                    <a href="./solucoes.html">Soluções</a>
+                    <a href="./nossasSolucoes.html">Soluções</a>
                     <div class="submenu">
-                        <a href="./solucoes/nossasSolucoes.html">Nossas Soluções</a>
+                        <a href="./nossasSolucoes.html">Nossas Soluções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Inspeções</a>
+                        <a href="./inspecoes.html">Inspeções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Qualificações</a>
+                        <a href="./qualificacoes.html">Qualificações</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Gerenciamento</a>
+                        <a href="./gerenciamento.html">Gerenciamento</a>
                     </div>
                 </div>
                 <a href="./consultas.html">Consultas</a>
-                <a href="#contato">Contatos</a>
+                <a href="./index.html#contato">Contatos</a>
             </nav>
             <button class="login-area-button">
                 Área de login
@@ -72,13 +71,13 @@
         </span>
         <img src="./resources/logo_white.png" alt="Logo Carneiro Inspeções com texto branco">
         <nav>
-            <a href="">Home</a>
-            <a href="">Nossas Soluções</a>
-            <a href="">Inspeções</a>
-            <a href="">Qualificações</a>
-            <a href="">Gerenciamento</a>
-            <a href="">Consultas</a>
-            <a href="">Contatos</a>
+            <a href="./index.html">Home</a>
+            <a href="./nossasSolucoes.html">Nossas Soluções</a>
+            <a href="./inspecoes.html">Inspeções</a>
+            <a href="./qualificacoes.html">Qualificações</a>
+            <a href="./gerenciamento.html">Gerenciamento</a>
+            <a href="./consultas.html">Consultas</a>
+            <a href="./index.html#contato">Contatos</a>
         </nav>
         <button class="login-area-button">
             Área de login
@@ -93,7 +92,7 @@
                     especializados em inspeção de soldagem. Solicite já sua inspeção!
                 </label>
                 <br />
-                <button style="width: 50%; " class="button" onclick="window.location.href='/inspecoes'">Saiba mais <img
+                <button style="width: 50%; " class="button" onclick="window.location.href='./inspecoes.html'">Saiba mais <img
                         src='./resources/arrow-white 1.svg' alt="Component" /></button>
             </div>
         </div>
@@ -191,7 +190,7 @@
                     </div>
                     <center>
                         <div class="container-button" style="width: 90%;">
-                            <button class="button" onclick="window.location.href='/inspecoes'">Saiba mais <img
+                            <button class="button" onclick="window.location.href='./inspecoes.html'">Saiba mais <img
                                     src='./resources/arrow-white 1.svg' alt="Component" /></button>
                         </div>
                         <br />
@@ -214,7 +213,7 @@
                     </div>
                     <center>
                         <div class="container-button" style="width: 90%;">
-                            <button class="button" onclick="window.location.href='/qualificacoes'">Saiba mais <img
+                            <button class="button" onclick="window.location.href='./qualificacoes.html'">Saiba mais <img
                                     src='./resources/arrow-white 1.svg' alt="Component" /></button>
                         </div>
                         <br />
@@ -237,7 +236,7 @@
                     </div>
                     <center>
                         <div class="container-button" style="width: 90%;">
-                            <button class="button" onclick="window.location.href='/gerenciamento'">Saiba mais <img
+                            <button class="button" onclick="window.location.href='./gerenciamento.html'">Saiba mais <img
                                     src='./resources/arrow-white 1.svg' alt="Component" /></button>
                         </div>
                         <br />
@@ -267,7 +266,7 @@
                 são autênticos e válidos.
             </p>
             <button style="background-color: transparent; border: 1px solid var(--008181, #008181);"
-                class="button-autorefresh">
+                class="button-autorefresh" onclick="window.location.href='./consultas.html'">
                 Saiba Mais <img src="./resources/arrow-white 1.svg" alt="Component" />
             </button>
         </div>
@@ -293,7 +292,7 @@
                 tenha a tranquilidade de saber que seus projetos estão de acordo com os mais altos padrões de qualidade
                 e segurança.
             </p>
-            <button style="background-color: var(--1-b-2-c-37, #1B2C37); border: 0px" class="button-autorefresh">
+            <button style="background-color: var(--1-b-2-c-37, #1B2C37); border: 0px" class="button-autorefresh" onclick="window.location.href='./consultas.html'">
                 Saiba Mais <img src="./resources/arrow-white 1.svg" alt="Component" />
             </button>
         </div>
@@ -328,10 +327,10 @@
             </span>
         </div>
         <div class="contact-form">
-            <form>
+            <form id="my-form">
                 <input type="text" id="inputNome" placeholder="Nome" />
                 <div class="div-contact-side-by-side">
-                    <input type="text" id="inputTel" placeholder="Telefone" />
+                    <input type="text" id="inputTel" placeholder="Telefone"/>
                     <input type="text" id="inputEmail" placeholder="E-mail" />
                 </div>
                 <input type="text" id="inputAssunto" placeholder="Assunto" />
@@ -359,7 +358,7 @@
             </span>
             <span>
                 <a href="https://www.instagram.com/carneiroinspecoes/" target="_blank" rel="noopener noreferrer">
-                    <img src="./resources/twitter_icon.svg" alt="Logo do Instagram">
+                    <img src="../resources/instagram_icon.svg" alt="Logo do Instagram">
                 </a>
             </span>
             <span>

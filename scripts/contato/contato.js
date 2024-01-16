@@ -1,4 +1,4 @@
-function submeterFormulario() {
+async function submeterFormulario() {
     var inputNome = document.getElementById('inputNome');
     var inputEmail = document.getElementById('inputEmail');
     var inputTel = document.getElementById('inputTel');
@@ -20,11 +20,48 @@ function submeterFormulario() {
         }) 
     };
     
+    desabilitaForm()
+
     if(validaCampos(inputNome.value, inputEmail.value, inputTel.value, inputAssunto.value, inputMensagem.value)) {
-        fetch(url, configuracao)
-        .then(() => exibeToastSucesso())
+        await fetch(url, configuracao)
+        .then(() => {
+            exibeToastSucesso()
+            reabilitaForm()
+        })
         .catch((error) => console.log(error))
+
+        limpaFormulario();
     }
+}
+
+function reabilitaForm() {
+    var inputNome = document.getElementById('inputNome');
+    var inputEmail = document.getElementById('inputEmail');
+    var inputTel = document.getElementById('inputTel');
+    var inputAssunto = document.getElementById('inputAssunto');
+    var inputMensagem = document.getElementById('inputMensagem');
+    inputNome.disabled = false;
+    inputEmail.disabled = false;
+    inputTel.disabled = false;
+    inputAssunto.disabled = false;
+    inputMensagem.disabled = false;
+}
+
+function desabilitaForm() {
+    var inputNome = document.getElementById('inputNome');
+    var inputEmail = document.getElementById('inputEmail');
+    var inputTel = document.getElementById('inputTel');
+    var inputAssunto = document.getElementById('inputAssunto');
+    var inputMensagem = document.getElementById('inputMensagem');
+    inputNome.disabled = true;
+    inputEmail.disabled = true;
+    inputTel.disabled = true;
+    inputAssunto.disabled = true;
+    inputMensagem.disabled = true;
+}
+
+function limpaFormulario() {
+    document.getElementById('my-form').reset();
 }
 
 function validaCampos(inputNome, inputEmail, inputTel, inputAssunto, inputMensagem) {

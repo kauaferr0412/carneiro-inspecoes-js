@@ -129,6 +129,7 @@
 }
 #inputEmail {
     border: 0.7px solid rgb(34, 34, 34);
+    width: 174px;
     height: 45px;
     flex-shrink: 0;
     margin-bottom: 20px;
@@ -143,7 +144,7 @@
 
 
     @media (max-width: 900px) {
-        width: 162px;
+        width: 174px;
     }
 }
 #inputEmail::placeholder {

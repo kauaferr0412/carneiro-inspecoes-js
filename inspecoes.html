@@ -39,19 +39,19 @@
             <nav>
                 <a href="./index.html">Home</a>
                 <div class="menu-solucoes">
-                    <a href="./solucoes.html">Soluções</a>
+                    <a href="./nossasSolucoes.html">Soluções</a>
                     <div class="submenu">
-                        <a href="./solucoes.html">Nossas Soluções</a>
+                        <a href="./nossasSolucoes.html">Nossas Soluções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Inspeções</a>
+                        <a href="./inspecoes.html">Inspeções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Qualificações</a>
+                        <a href="./qualificacoes.html">Qualificações</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Gerenciamento</a>
+                        <a href="./gerenciamento.html">Gerenciamento</a>
                     </div>
                 </div>
                 <a href="./consultas.html">Consultas</a>
-                <a href="#contato">Contatos</a>
+                <a href="./index.html#contato">Contatos</a>
             </nav>
             <button class="login-area-button">
                 Área de login
@@ -71,13 +71,13 @@
         </span>
         <img src="../resources/logo_white.png" alt="Logo Carneiro Inspeções com texto branco">
         <nav>
-            <a href="">Home</a>
-            <a href="">Nossas Soluções</a>
-            <a href="">Inspeções</a>
-            <a href="">Qualificações</a>
-            <a href="">Gerenciamento</a>
-            <a href="">Consultas</a>
-            <a href="">Contatos</a>
+            <a href="./index.html">Home</a>
+            <a href="./nossasSolucoes.html">Nossas Soluções</a>
+            <a href="./inspecoes.html">Inspeções</a>
+            <a href="./qualificacoes.html">Qualificações</a>
+            <a href="./gerenciamento.html">Gerenciamento</a>
+            <a href="./consultas.html">Consultas</a>
+            <a href="./index.html#contato">Contatos</a>
         </nav>
         <button class="login-area-button">
             Área de login
@@ -242,8 +242,11 @@
     <div style="display: flex; flex-direction: column; align-items: center;">
         <div class="tabs">
             <button class="tab-btn" onclick="openTab(event, 'tab1')">LÍQUIDO PENETRANTE</button>
-            <button class="tab-btn" onclick="openTab(event, 'tab2')">Tab 2</button>
-            <button class="tab-btn" onclick="openTab(event, 'tab3')">Tab 3</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab2')">ENSAIO VISUAL DE SOLDA</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab3')">ENSAIO DE PARTÍCULAS MAGNÉTICAS</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab4')">ENSAIO POR ULTRASSOM</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab5')">VIDEOSCOPIA/<br/>BAROSCOPIA</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab6')">INSPEÇÃO DE PINTURA</button>
         </div>
 
     </div>
@@ -276,18 +279,138 @@
                     </div>
                     <br />
                 </div>
-                <img class="img-card-text tabview-img" src="../resources/liquido_penetrante.svg" />
+                <img class="img-card-text tabview-img" src="../resources/liquido_penetrante.svg" alt="Imgam de uma inspeção por líquido penetrante."/>
             </div>
         </div>
 
         <div id="tab2" class="tab-content">
-            <h2>Conteúdo da Tab 2</h2>
-            <p>Este é o conteúdo da Tab 2.</p>
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Ensaio Visual de Solda
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">O ensaio visual de solda (EVS) representa uma etapa essencial no controle de qualidade da soldagem, 
+                            realizada tanto antes quanto após a operação de soldagem. Seu propósito central é verificar a qualidade da junta soldada, 
+                            identificando possíveis defeitos e descontinuidades.</p>
+                        <br />
+                        <p class="text-tabview">Durante o EVS, um inspetor altamente capacitado conduz uma inspeção minuciosa da superfície da solda. 
+                            Utilizando olhos treinados e iluminação apropriada, o inspetor detecta potenciais falhas, 
+                            tais como trincas, porosidades, falta de fusão ou desalinhamento. Essa abordagem meticulosa assegura a detecção precoce de imperfeições, 
+                            contribuindo para a integridade estrutural e a conformidade com os padrões de qualidade.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/ensaio_visual_solda.jpg" alt="Imagem de um Soldador, realizando ensaio visual de solda."/>
+            </div>
         </div>
 
         <div id="tab3" class="tab-content">
-            <h2>Conteúdo da Tab 3</h2>
-            <p>Este é o conteúdo da Tab 3.</p>
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Ensaio de Partículas Magnéticas
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">O ensaio de partículas magnéticas (PM) é uma técnica utilizada na inspeção de materiais ferromagnéticos, 
+                            detectando descontinuidades que podem comprometer a integridade estrutural. Ao criar um campo magnético e aplicar partículas magnéticas na superfície, 
+                            o método revela trincas e inclusões, sendo particularmente sensível a imperfeições abaixo da superfície.</p>
+                        <br />
+                        <p class="text-tabview">Sua rapidez torna-o ideal para ambientes industriais, sendo versátil em aplicações como inspeção de soldas, 
+                            componentes estruturais e tubulações. A capacidade de penetrar em áreas de difícil acesso destaca sua aplicabilidade em superfícies complexas. 
+                            Além de identificar defeitos eficientemente, o PM contribui para a minimização de custos, prevenindo problemas futuros.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/ensaio_particulas_magneticas.jpg" alt="Imagem de um ensaio de partículas magnéticas."/>
+            </div>
+        </div>
+
+        <div id="tab4" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Ensaio por Ultrassom
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">O ensaio por ultrassom (US) é uma técnica não destrutiva que utiliza ondas sonoras de alta frequência para avaliar a integridade de materiais. 
+                            Durante o processo, pulsos de ondas ultrassônicas são direcionados para o material, e as alterações na velocidade e amplitude das ondas revelam descontinuidades internas, 
+                            como trincas e inclusões.</p>
+                        <br />
+                        <p class="text-tabview">Essa metodologia oferece alta precisão e sensibilidade, permitindo a detecção precoce de falhas e prevenindo possíveis rupturas. 
+                            Amplamente aplicado em inspeções de soldas, estruturas metálicas e componentes críticos, o ensaio por ultrassom destaca-se pela capacidade de avaliar materiais sem causar danos. 
+                            Sua versatilidade e resolução tornam-no essencial na inspeção industrial contribuindo para a garantia da qualidade, segurança e confiabilidade em diversas indústrias.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/ensaio_por_ultrassom.jpg" alt="Soldador realizando ensaio por ultrassom."/>
+            </div>
+        </div>
+
+        <div id="tab5" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Videoscopia / boroscopia
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A videoscopia, ou boroscopia, é uma técnica de inspeção visual avançada que utiliza um boroscópio flexível com uma câmera integrada para explorar áreas de difícil acesso. 
+                            Essa ferramenta transmite imagens em tempo real para um monitor, permitindo uma análise detalhada de componentes internos, 
+                            tubulações ou máquinas sem a necessidade de desmontagem.</p>
+                        <br />
+                        <p class="text-tabview">Comumente empregada na manutenção preditiva, 
+                            a videoscopia identifica desgastes, danos ou anomalias, contribuindo para a prevenção de falhas. 
+                            A flexibilidade do boroscópio possibilita a exploração de áreas complexas.</p>
+                        </p>
+                        <p class="text-tabview">Além de sua aplicação em ambientes hostis, a videoscopia oferece a vantagem de registrar imagens e vídeos para análise posterior, 
+                            facilitando o acompanhamento de mudanças ao longo do tempo. Sua eficácia na inspeção visual remota promove a eficiência operacional e a identificação precoce de problemas, 
+                            tornando-a uma ferramenta indispensável em diversos contextos industriais.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/videoscopia.jpg" alt="Imagem de um processo de Videoscopia"/>
+            </div>
+        </div>
+
+        <div id="tab6" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Inspeção de pintura
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A inspeção de pintura desempenha um papel fundamental na garantia da qualidade estética e durabilidade de superfícies pintadas. 
+                            Este processo inclui a avaliação minuciosa da aplicação da tinta, verificando uniformidade, aderência, cobertura e a ausência de imperfeições visíveis, 
+                            como bolhas ou escorrimentos. Medidores de espessura de revestimento são frequentemente empregados para garantir que a camada de tinta atenda às especificações.</p>
+                        <br />
+                        <p class="text-tabview">A inspeção também é essencial para identificar defeitos superficiais que podem comprometer a integridade da pintura ao longo do tempo. 
+                            Essa prática é particularmente mais relevante em setores que possuem atmosferas onde a resistência à corrosão é exigida. A conformidade com padrões e especificações é essencial para assegurar que as peças pintadas atendam aos requisitos de desempenho e estética, 
+                            contribuindo para a satisfação do cliente e a durabilidade do produto final.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/inspecao_de_pintura.jpg" alt="Procedimento de inspeção de pintura"/>
+            </div>
         </div>
     </div>
 
@@ -327,7 +450,7 @@
             </span>
             <span>
                 <a href="https://www.instagram.com/carneiroinspecoes/" target="_blank" rel="noopener noreferrer">
-                    <img src="../resources/twitter_icon.svg" alt="Logo do Instagram">
+                    <img src="../resources/instagram_icon.svg" alt="Logo do Instagram">
                 </a>
             </span>
             <span>

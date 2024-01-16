@@ -41,17 +41,17 @@
                 <div class="menu-solucoes">
                     <a href="./solucoes.html">Soluções</a>
                     <div class="submenu">
-                        <a href="./solucoes.html">Nossas Soluções</a>
+                        <a href="./nossasSolucoes.html">Nossas Soluções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Inspeções</a>
+                        <a href="./inspecoes.html">Inspeções</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Qualificações</a>
+                        <a href="./qualificacoes.html">Qualificações</a>
                         <hr class="hr-divisor" />
-                        <a href="#">Gerenciamento</a>
+                        <a href="./gerenciamento.html">Gerenciamento</a>
                     </div>
                 </div>
                 <a href="./consultas.html">Consultas</a>
-                <a href="#contato">Contatos</a>
+                <a href="./index.html#contato">Contatos</a>
             </nav>
             <button class="login-area-button">
                 Área de login
@@ -71,13 +71,13 @@
         </span>
         <img src="../resources/logo_white.png" alt="Logo Carneiro Inspeções com texto branco">
         <nav>
-            <a href="">Home</a>
-            <a href="">Nossas Soluções</a>
-            <a href="">Inspeções</a>
-            <a href="">Qualificações</a>
-            <a href="">Gerenciamento</a>
-            <a href="">Consultas</a>
-            <a href="">Contatos</a>
+            <a href="./index.html">Home</a>
+            <a href="./nossasSolucoes.html">Nossas Soluções</a>
+            <a href="./inspecoes.html">Inspeções</a>
+            <a href="./qualificacoes.html">Qualificações</a>
+            <a href="./gerenciamento.html">Gerenciamento</a>
+            <a href="./consultas.html">Consultas</a>
+            <a href="#contato">Contatos</a>
         </nav>
         <button class="login-area-button">
             Área de login
@@ -257,9 +257,12 @@
     </div>
     <div style="display: flex; flex-direction: column; align-items: center;">
         <div class="tabs">
-            <button class="tab-btn" onclick="openTab(event, 'tab1')">LÍQUIDO PENETRANTE</button>
-            <button class="tab-btn" onclick="openTab(event, 'tab2')">Tab 2</button>
-            <button class="tab-btn" onclick="openTab(event, 'tab3')">Tab 3</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab1')">ESPECIFICAÇÃO DE SOLDAGEM</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab2')">QUALIFICAÇÃO DE SOLDADORES</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab3')">INSTRUÇÃO DE EXECUÇÃO E INSPEÇÃO DE SOLDAGEM</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab4')">PLANO DE INSPEÇÃO E TESTES</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab5')">ELABORAÇÃO DE PROCEDIMENTOS</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab6')">ENSAIOS MECÂNICOS</button>
         </div>
 
     </div>
@@ -270,40 +273,164 @@
             <div class="card-container-info">
                 <div class="text-container">
                     <h2 class="text-subtittle">
-                        Inspeção por líquido penetrante
+                        Especificação de Procedimento de Soldagem
                     </h2>
                     <br />
                     <div>
                         <img src="../resources/aspas.svg" />
                         <br />
-                        <p class="text-tabview">O ensaio por Líquido Penetrante (LP) é um método de ensaio não
-                            destrutivo utilizado para detectar
-                            descontinuidades superficiais em materiais metálicos e não metálicos. Consiste em aplicar um
-                            líquido penetrante na superfície da peça a ser inspecionada e, após um tempo de penetração,
-                            remover o excesso de líquido e aplicar um revelador para evidenciar as descontinuidades.</p>
-                        <br />
-                        <p class="text-tabview">O ensaio por LP é aplicado em diversas áreas da indústria, como na
-                            inspeção de soldas, peças
-                            aeronáuticas, componentes de turbinas, estruturas metálicas, entre outros. É um método
-                            eficiente
-                            e econômico para detectar descontinuidades superficiais em materiais, contribuindo para a
-                            garantia da qualidade e segurança dos produtos e processos industriais.</p>
-                        </p>
+                        <p class="text-tabview">A especificação de procedimento de soldagem (EPS) é um documento que estabelece as práticas e parâmetros técnicos a serem utilizados na realização de uma soldagem. Para ser qualificada, 
+                            a especificação deve ser submetida a testes de qualificação de soldagem, que avaliam a habilidade do procedimento em produzir juntas soldadas de qualidade. 
+                            Esses testes incluem a realização de testes mecânicos, exame visual, radiográfico, líquido penetrante, ultrassom e outros métodos não destrutivos, 
+                            a depender das exigências do projeto e do material a ser soldado.</p>
                     </div>
                     <br />
                 </div>
-                <img class="img-card-text tabview-img" src="../resources/liquido_penetrante.svg" />
+                <img class="img-card-text tabview-img" src="./resources/procedimento_soldagem.svg" alt="Imagem de um documento de especificação de procedimento de soldagem (EPS)"/>
             </div>
         </div>
 
         <div id="tab2" class="tab-content">
-            <h2>Conteúdo da Tab 2</h2>
-            <p>Este é o conteúdo da Tab 2.</p>
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Qualificação de Soldadores
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A qualificação de soldadores é um processo essencial para garantir a competência na execução de soldas seguras e de alta qualidade. 
+                            Durante essa avaliação, as habilidades dos profissionais são minuciosamente analisadas, 
+                            considerando fatores como o tipo de solda, os materiais utilizados e os métodos empregados. 
+                            Testes práticos, como ensaios visuais, volumétricos, dobramento e macrografia, 
+                            são conduzidos para assegurar que os soldadores atendam aos rigorosos critérios de aceitação.</p>
+                        <br />
+                        <p class="text-tabview">A validação dessas competências não apenas contribui para a qualidade das uniões soldadas, 
+                            mas também é ponto chave para a conformidade com normas e códigos específicos da indústria. 
+                            A manutenção e renovação periódica dessas qualificações são práticas recomendadas, 
+                            garantindo que os soldadores estejam atualizados com as melhores práticas e tecnologias, 
+                            sustentando elevados padrões de excelência na execução de soldas críticas. 
+                            Esse processo é fundamental para garantir a segurança e confiabilidade em ambientes que dependem de soldas de alta performance.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/img_qualificacao_soldadores.jpg" alt="Imagem de um soldador em processo de qualificação, realizando um procedimento de soldagem."/>
+            </div>
         </div>
 
         <div id="tab3" class="tab-content">
-            <h2>Conteúdo da Tab 3</h2>
-            <p>Este é o conteúdo da Tab 3.</p>
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Instrução de execução e inspeção de soldagem
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A instrução de execução e inspeção de soldagem (IEIS) é um documento essencial que fornece diretrizes 
+                            para soldadores e inspetores garantirem a qualidade e segurança durante o processo de soldagem. Na fase de execução, a instrução detalha parâmetros específicos, 
+                            como tipo de metal, processo de soldagem e técnicas a serem empregadas,
+                             além de abordar aspectos como preparação de materiais e sequência de execução.</p>
+                        <br />
+                        <p class="text-tabview">Para a inspeção, a instrução destaca critérios de aceitação, métodos de ensaio (ensaios visuais, ultrassom, radiografia, etc.) 
+                            e estabelece padrões de qualidade exigidos. Seguir rigorosamente essas diretrizes assegura a conformidade com normas e códigos específicos da indústria. 
+                            Ao proporcionar uma referência clara, a instrução de execução e inspeção de soldagem desempenha um papel fundamental na garantia da qualidade e integridade das uniões soldadas, 
+                            promovendo a segurança e confiabilidade em diversos setores industriais.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/img_inst_exec_proc_soldagem.png" alt="Imagem de um documento de instrução de execução e inspeção de soldagem (IEIS)."/>
+            </div>
+        </div>
+
+        <div id="tab4" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Plano de Inspeção e Testes
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">O Plano de Inspeção e Testes (PIT) é um documento que fornece diretrizes detalhadas para as atividades 
+                            de inspeção e testes ao longo do ciclo de produção. Este plano tem como objetivo primordial assegurar a qualidade, 
+                            conformidade e integridade dos produtos ou sistemas fabricados, desempenhando um papel crucial na gestão da qualidade.</p>
+                        <br />
+                        <p class="text-tabview">No PIT, são detalhados critérios de inspeção, métodos de teste e as etapas específicas do processo de produção que demandam inspeção. 
+                            Desde requisitos dimensionais até testes não destrutivos, como ultrassom e radiografia, o PIT serve como um roteiro abrangente para garantir que cada fase do projeto 
+                            seja submetida a verificações rigorosas. Ao estabelecer padrões claros e procedimentos detalhados, o PIT contribui significativamente para a garantia da qualidade, 
+                            a conformidade com padrões industriais e a entrega de produtos finais confiáveis e seguros, resultando em benefícios tanto para a indústria quanto para os consumidores.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/img_plano_de_teste.png" alt="Imagem de um documento de plano de testes."/>
+            </div>
+        </div>
+
+        <div id="tab5" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Elaboração de procedimentos
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">A implementação de procedimentos operacionais traz benefícios significativos em termos de organização, 
+                            segurança e eficiência. Ao estabelecer uma estrutura clara para a execução de tarefas, esses procedimentos promovem a uniformidade nas operações, 
+                            contribuindo para a padronização e consistência.</p>
+                        <br />
+                        <p class="text-tabview">A segurança é aprimorada com diretrizes específicas para mitigar riscos, 
+                            proporcionando práticas seguras e orientações sobre o manuseio adequado de equipamentos. Além disso, a eficiência operacional é otimizada, 
+                            uma vez que os procedimentos estabelecem uma sequência lógica de passos, reduzindo erros, 
+                            minimizando retrabalhos e facilitando o treinamento de novos colaboradores. Essa abordagem não apenas protege os trabalhadores, 
+                            mas também aprimora a qualidade, garantindo o sucesso e a sustentabilidade das operações em diversos setores.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/img_card_4.jpg" alt="Imagem de uma peça metálica sendo erguida."/>
+            </div>
+        </div>
+
+        <div id="tab6" class="tab-content">
+            <div class="card-container-info">
+                <div class="text-container">
+                    <h2 class="text-subtittle">
+                        Ensaios mecânicos
+                    </h2>
+                    <br />
+                    <div>
+                        <img src="../resources/aspas.svg" />
+                        <br />
+                        <p class="text-tabview">Os ensaios mecânicos são métodos para avaliar as propriedades mecânicas dos materiais para qualificação de soldadores e 
+                            procedimentos de soldagem.</p>
+                        <br />
+                        <p class="text-tabview">No ensaio de dobramento, uma amostra padronizada é flexionada até atingir um ângulo específico, 
+                            revelando a ductilidade e flexibilidade do material, informações vitais para aplicações sujeitas a curvaturas.</p>
+                        </p>
+                        <br />
+                        <p class="text-tabview">Já o ensaio de tração é fundamental para compreender a resistência e deformação do material sob carga uniaxial. 
+                            Ao esticar uma amostra até a ruptura, são obtidas informações essenciais sobre limites de elasticidade, 
+                            resistência e alongamento, contribuindo para o design preciso de estruturas e componentes.</p>
+                        </p>
+                        <br />
+                        <p class="text-tabview">O ensaio de impacto, realizado com máquinas como a de Charpy, avalia a capacidade do material em absorver energia durante impactos súbitos. 
+                            Essa análise determina a tenacidade do material em condições de serviço, 
+                            sendo especialmente relevante em aplicações expostas a situações de impacto, como em estruturas sujeitas a condições adversas.</p>
+                        </p>
+                    </div>
+                    <br />
+                </div>
+                <img class="img-card-text tabview-img" src="./resources/img_card_5.jpg" alt="Imagem de peças de metal utilizadas em ensaios mecânicos."/>
+            </div>
         </div>
     </div>
 
@@ -343,7 +470,7 @@
             </span>
             <span>
                 <a href="https://www.instagram.com/carneiroinspecoes/" target="_blank" rel="noopener noreferrer">
-                    <img src="../resources/twitter_icon.svg" alt="Logo do Instagram">
+                    <img src="../resources/instagram_icon.svg" alt="Logo do Instagram">
                 </a>
             </span>
             <span>
