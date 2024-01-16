@@ -413,31 +413,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function openTab(event, tabName) {
-            var i, tabContent;
-
-            tabContent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabContent.length; i++) {
-                tabContent[i].style.display = "none";
-            }
-
-            var tabButtons = document.getElementsByClassName("tab-btn");
-            for (i = 0; i < tabButtons.length; i++) {
-                tabButtons[i].classList.remove("active");
-            }
-
-            document.getElementById(tabName).style.display = "block";
-
-            event.currentTarget.classList.add("active");
-        }
-
-        document.getElementById("tab1").style.display = "block";
-        document.getElementsByClassName("tab-btn")[0].classList.add("active");
-
-    </script>
-
     <br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
     <footer class="rodape-padrao">
         <img src="../resources/logo_white.png" alt="Logo Carneiro Inspeções, versão Rodapé" />
@@ -463,6 +438,7 @@
     <script src="../scripts/menu/comportamentoMenus.js"></script>
     <script src="../scripts/home/autoRefresh.js"></script>
     <script src="../scripts/contato/contato.js"></script>
+    <script src="./scripts/cards/cards.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 

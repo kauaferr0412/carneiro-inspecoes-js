@@ -212,6 +212,17 @@
         margin-top: 20px;
     }
     .button-envia-mensagem {
-        margin-right: 0px;
+        margin-left: 0px;
+        margin-right: 58px;
+
+        width: 340px;
+    }
+
+    #inputNome, #inputAssunto, #inputMensagem {
+        width: 340px;
+    }
+
+    #inputTel, #inputEmail{
+        width: 165px;
     }
 }
