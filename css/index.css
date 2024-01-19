@@ -7,7 +7,6 @@
 
 .tabs {
     display: flex;
-    padding: 100px;
 }
 
 .tab-btn {
@@ -162,8 +161,10 @@
     display: none;
     border: 0px;
     width: 100%;
+    margin-top: 100px;
     @media (max-width: 900px) {
         padding: 10px;
+        margin-top: 0px;
     }
     
 }
@@ -466,6 +467,8 @@
 .card-wrapper {
     width: 30%;
     margin-bottom: 20px;
+    height: 300px; 
+    margin-bottom: 250px;
 }
 
 .card {
@@ -478,8 +481,12 @@
 
 .card-content {
     width: 100%;
-    height: auto;
+    height: 200px;
     background: #1B2C37;
+    
+    @media (max-width: 900px) {
+        height: 250px;
+    }
 }
 
 .card-title {
